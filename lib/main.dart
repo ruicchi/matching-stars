@@ -30,6 +30,8 @@ void main() async {
 final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 
 class Match2Game extends StatelessWidget {
+  const Match2Game({super.key});
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,6 +47,8 @@ class Match2Game extends StatelessWidget {
   }
 }
 class LeaderboardPage extends StatefulWidget {
+  const LeaderboardPage({super.key});
+
   @override
   _LeaderboardPageState createState() => _LeaderboardPageState();
 }
@@ -85,6 +89,8 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
 }
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -656,7 +662,7 @@ class RotationYTransition extends StatelessWidget {
   final Widget front;
   final Widget back;
 
-  const RotationYTransition({
+  const RotationYTransition({super.key, 
     required this.turns,
     required this.front,
     required this.back,
@@ -699,14 +705,14 @@ class CardModel {
 class GamePage extends StatefulWidget {
   final String difficulty;
 
-  GamePage({required this.difficulty});
+  const GamePage({super.key, required this.difficulty});
 
   @override
   _GamePageState createState() => _GamePageState();
 }
 
 class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
-  AudioPlayer _audioPlayer = AudioPlayer();
+  final AudioPlayer _audioPlayer = AudioPlayer();
   List<CardModel> cards = [];
   bool wait = false;
   int score = 0;
@@ -1018,7 +1024,7 @@ void _checkForWin() {
   }
 }
 
-TextEditingController _nameController = TextEditingController();
+final TextEditingController _nameController = TextEditingController();
 
 void _showWinDialog() {
   int totalScore = score * remainingTime;
