@@ -1,5 +1,5 @@
 # Matching-Stars
-## Match 2 card game themed galaxy made in flutter.
+### Match 2 card game themed galaxy made in flutter.
 
 A Game Flutter project
 
