@@ -1,8 +1,9 @@
-match_2_card_game
+# Matching-Stars
+## Match 2 card game themed galaxy made in flutter.
 
-Game Flutter project
+A Game Flutter project
 
-Getting Started
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
