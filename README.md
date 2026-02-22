@@ -10,9 +10,21 @@ A few resources to get you started if this is your first Flutter project:
 
 https://www.youtube.com/watch?v=1KidD72q87s
 
-get dependencies using flutter pub get in terminal
+Follow these steps to run the project locally:
 
-to run, flutter run -d windows
+### 1. Install dependencies
+Open a terminal in the project directory and run:
+
+```bash
+flutter pub get
+```
+
+### 2. Run the app
+To run the app:
+
+```bash
+flutter run -d windows
+```
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
